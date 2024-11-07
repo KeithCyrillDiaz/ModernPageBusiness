@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- PlayFair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    <body>
+        <header id="home">
+            <!-- Tabs -->
+             <nav>
+                <img src="./images/logo.png"/>
+
+                <!-- humburger Icon-->
+                <input type="checkbox" id="mobileMenu-active" style="display: none;"/>
+                <label class="burgerMenu"  for="mobileMenu-active">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7.5C5 7.16848 5.1317 6.85054 5.36612 6.61612C5.60054 6.3817 5.91848 6.25 6.25 6.25H23.75C24.0815 6.25 24.3995 6.3817 24.6339 6.61612C24.8683 6.85054 25 7.16848 25 7.5C25 7.83152 24.8683 8.14946 24.6339 8.38388C24.3995 8.6183 24.0815 8.75 23.75 8.75H6.25C5.91848 8.75 5.60054 8.6183 5.36612 8.38388C5.1317 8.14946 5 7.83152 5 7.5ZM5 15C5 14.6685 5.1317 14.3505 5.36612 14.1161C5.60054 13.8817 5.91848 13.75 6.25 13.75H23.75C24.0815 13.75 24.3995 13.8817 24.6339 14.1161C24.8683 14.3505 25 14.6685 25 15C25 15.3315 24.8683 15.6495 24.6339 15.8839C24.3995 16.1183 24.0815 16.25 23.75 16.25H6.25C5.91848 16.25 5.60054 16.1183 5.36612 15.8839C5.1317 15.6495 5 15.3315 5 15ZM6.25 21.25C5.91848 21.25 5.60054 21.3817 5.36612 21.6161C5.1317 21.8505 5 22.1685 5 22.5C5 22.8315 5.1317 23.1495 5.36612 23.3839C5.60054 23.6183 5.91848 23.75 6.25 23.75H23.75C24.0815 23.75 24.3995 23.6183 24.6339 23.3839C24.8683 23.1495 25 22.8315 25 22.5C25 22.1685 24.8683 21.8505 24.6339 21.6161C24.3995 21.3817 24.0815 21.25 23.75 21.25H6.25Z" fill="white"/>
+                        </svg>
+                </label>
+                <!-- For covering the whole page and when click it will close the side bar -->
+                <label for="mobileMenu-active" id="overlay"></label>
+                <!-- Mobile Menu -->
+                <div class="mobileMenu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#foodMenu">Menu</a></li>
+                        <li><a href="#chefs">Chefs</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <!-- Desktop Menu -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#foodMenu">Menu</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+             </nav>
+        </header>
+        <main>
+            <section id="hero" class="hero">
+                <div class="heroContainer">
+                    <img src="./images/main_img.png"/>
+                    <div class="heroDetails">
+                        <h1>Where Every Bite Counts! </h1>
+                        <p>At Food, we believe every bite should be an experience. From the first taste to the last, we're dedicated to serving up delicious meals that make every moment memorable.</p>
+                        <button>ORDER NOW</button>
+                    </div>
+                
+                </div>
+            </section>
+            <!-- Food Menu -->
+            <section id="foodMenu" class="foodMenu">
+                    <h1>Food Menu</h1>
+                    <h2>Signature Dish</h2>
+                   <div class="signatureDish">
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/biryani.webp"/>
+                            <div class="foodDetails">
+                                <h2>Biryani</h2>
+                                <p>A fragrant, flavorful rice dish layered with tender meat and aromatic spices, offering a perfect balance of richness and warmth in every bite.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$149.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="menuCard">
+                            <img src="./images/Food-Plate.png"/>
+                            <div class="foodDetails">
+                                <h2>Salad</h2>
+                                <p>A colorful mix of fresh, crisp vegetables and greens, offering a refreshing burst of flavor in every bite.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$99.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                   </div>
+
+
+                   <h2>Desserts</h2>
+                   <div class="signatureDish">
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/chocolate.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Chocolate</h2>
+                                <p>A rich, indulgent treat made from cacao, offering a perfect balance of sweetness and depth in every bite</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$149.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/cake.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Cake</h2>
+                                <p> A soft, fluffy delight with layers of rich flavors, perfect for celebrations and sweet indulgence.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$249.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/gallary_3.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Cup Cake</h2>
+                                <p> A mini, handheld treat topped with creamy frosting, delivering a burst of sweetness in every bite.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$39.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                   </div>
+
+
+                   <h2>Burgers & Sandwiches</h2>
+                   <div class="signatureDish">
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/buger.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Burger</h2>
+                                <p>A savory stack of juicy meat, fresh veggies, and melty cheese, all tucked inside a soft bun for a satisfying bite.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$9.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/sandwich.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Sandwich</h2>
+                                <p>A classic handheld meal with layers of fresh ingredients, perfect for a quick and tasty snack.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$9.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/Hot_dog.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Hotdog</h2>
+                                <p>A flavorful grilled sausage nestled in a bun, topped with your choice of condiments for a tasty, on-the-go treat.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$9.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                   </div>
+
+
+                   <h2>Pizzas</h2>
+                   <div class="signatureDish">
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/gallary_5.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Mushroom</h2>
+                                <p>A savory pizza topped with earthy mushrooms, melted mozzarella, and a rich tomato sauce for a satisfying, simple flavor.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$249.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/pizza.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Vegetarian</h2>
+                                <p>A fresh mix of colorful vegetables like bell peppers, onions, olives, and spinach, all atop a cheesy, flavorful base</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$249.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                      
+                   </div>
+
+                   <h2>Drinks</h2>
+                   <div class="signatureDish">
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/chocolate_Drink.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Chocolate Drink</h2>
+                                <p>A creamy, rich beverage made with melted chocolate and milk, offering a warm and indulgent treat for any chocolate lover</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$4.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Menu Card -->
+                        <div class="menuCard">
+                            <img src="./images/juse.jpg"/>
+                            <div class="foodDetails">
+                                <h2>Juice</h2>
+                                <p>A refreshing and natural drink made from freshly squeezed fruits, bursting with vibrant flavors and nutrients.</p>
+                            <div class="priceAndOrderContainer">
+                                    <p class="price">$4.99</p>
+                                    <button>ORDER</button>
+                            </div>
+                            </div>
+                        </div>
+                   </div>
+            </section>
+
+            <section id="chefs" class="chefs">
+                <h1>Meet the Chefs</h1>
+                <div class="chefsContainer">
+                    <div class="chefsCard">
+                        <img src="./images/chef1.png"/>
+                        <h2>Daniel Martinez</h2>
+                        <p>With over a decade of culinary experience, Daniel brings bold flavors and innovative techniques to every dish, making him a true master in the kitchen</p>
+                    </div>
+                    <div class="chefsCard">
+                        <img src="./images/chef2.png"/>
+                        <h2>Ruth Bianchi</h2>
+                        <p>Ruth combines her passion for fresh ingredients with a deep respect for traditional recipes, creating meals that are both comforting and exciting</p>
+                    </div>
+                    <div class="chefsCard">
+                        <img src="./images/chef3.jpg"/>
+                        <h2>David Garcia</h2>
+                        <p>Known for his precision and creativity, David crafts dishes that are as visually stunning as they are delicious, elevating every meal to an art form</p>
+                    </div>
+                    <div class="chefsCard">
+                        <img src="./images/chef4.jpg"/>
+                        <h2>Paul Delgado</h2>
+                        <p>Paul’s expertise in global cuisine and flair for blending unique spices guarantees every dish is an unforgettable experience for your taste buds</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="reviews" class="reviews">
+                <h1>Reviews</h1>
+                <div class="reviewsContainer">
+                    <div class="reviewContentContainer">
+                        <!-- Review Card -->
+                        <div class="reviewCard">
+                            <div class="profileCard">
+                                <img src="./images/review_1.png"/>
+                                <div class="profileDetails">   
+                                    <h2>Michelle Santos</h2>
+                                    <p>Total Spent: <span class="spent">$600</span></p>
+                                    <!-- stars -->
+                                    <div class="starsContainer">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="message">
+                                "A delightful experience with great flavors and attentive service, though a little room for improvement. Overall, a solid 4/5!"
+                            </p>
+                        </div>
+
+                         <!-- Review Card -->
+                         <div class="reviewCard">
+                            <div class="profileCard">
+                                <img src="./images/review_2.png"/>
+                                <div class="profileDetails">   
+                                    <h2>Mark Lombardi</h2>
+                                    <p>Total Spent: <span class="spent">$700</span></p>
+                                    <!-- stars -->
+                                    <div class="starsContainer">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="message">
+                                "Absolutely fantastic! Every dish was a masterpiece, and the flavors were perfectly balanced. Worth every penny!"
+                            </p>
+                        </div>
+                        
+                         <!-- Review Card -->
+                         <div class="reviewCard">
+                            <div class="profileCard">
+                                <img src="./images/review_3.png"/>
+                                <div class="profileDetails">   
+                                    <h2>Micah Rodriguez</h2>
+                                    <p>Total Spent: <span class="spent">$800</span></p>
+                                    <!-- stars -->
+                                    <div class="starsContainer">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="white"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="message">
+                                “While the food was decent, it didn't fully live up to expectations. Still, a pleasant meal for the most part.”
+                            </p>
+                        </div>
+
+                         <!-- Review Card -->
+                         <div class="reviewCard">
+                            <div class="profileCard">
+                                <img src="./images/review_4.png"/>
+                                <div class="profileDetails">   
+                                    <h2>John Moreu</h2>
+                                    <p>Total Spent: <span class="spent">$500</span></p>
+                                    <!-- stars -->
+                                    <div class="starsContainer">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="message">
+                                "Great food and ambiance, with only a minor hiccup in service. Still a wonderful dining experience overall."
+                            </p>
+                        </div>
+                    </div>
+                        <!-- End of reviewContentContainer -->
+
+
+                      <!-- Review details -->
+                    <div class="reviewDetails">
+                        
+                        <div class="totalReviews">
+                            <h2>Total Reviews</h2>
+                            <p>7.0k</p>
+                            <span>Overall reviews per year</span>
+                        </div>
+                        <div class="averageRating">
+                            <h2>Average Rating</h2>
+                            <div class="ratingAndStars">
+                                <p>4.0</p>
+                                <div class="starsContainer">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                    </svg>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#808080"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Average rating in the year</span>
+                        </div>
+
+                        <div class="starBarGraph">
+                            <!-- startGraphCard -->
+                            <div class="starGraphCard">
+                                <p>5</p>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                </svg>
+                            <div class="barGraph5">dummy</div>
+                            </div>
+                            <!-- startGraphCard -->
+                            <div class="starGraphCard">
+                                <p>4</p>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                </svg>
+                                <div class="barGraph4">dummy</div>
+                            </div>
+                            <!-- startGraphCard -->
+                            <div class="starGraphCard">
+                                <p>3</p>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                </svg>
+                                <div class="barGraph3">dummy</div>
+                            </div>
+                            <!-- startGraphCard -->
+                            <div class="starGraphCard">
+                                <p>2</p>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                </svg>
+                            <div class="barGraph2">dummy</div>
+                            </div>
+                            <!-- startGraphCard -->
+                            <div class="starGraphCard">
+                                <p>1</p>
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.295 12.1378L3.27 7.84852L0 4.96354L4.32 4.58193L6 0.536865L7.68 4.58193L12 4.96354L8.73 7.84852L9.705 12.1378L6 9.86342L2.295 12.1378Z" fill="#FAC031"/>
+                                </svg>
+                                <div class="barGraph1">d</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+          <!-- footer -->
+          <footer>
+            <section class="contactUs">
+                    <h2>Contact Us</h2>
+                    <!-- Address -->
+                    <div class="contactDetailsCard">
+                        <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 9.5C6.7896 9.5 6.10829 9.23661 5.60596 8.76777C5.10363 8.29893 4.82143 7.66304 4.82143 7C4.82143 6.33696 5.10363 5.70107 5.60596 5.23223C6.10829 4.76339 6.7896 4.5 7.5 4.5C8.2104 4.5 8.89171 4.76339 9.39404 5.23223C9.89637 5.70107 10.1786 6.33696 10.1786 7C10.1786 7.3283 10.1093 7.65339 9.97468 7.95671C9.84007 8.26002 9.64276 8.53562 9.39404 8.76777C9.14531 8.99991 8.85002 9.18406 8.52505 9.3097C8.20007 9.43534 7.85176 9.5 7.5 9.5ZM7.5 0C5.51088 0 3.60322 0.737498 2.1967 2.05025C0.790176 3.36301 0 5.14348 0 7C0 12.25 7.5 20 7.5 20C7.5 20 15 12.25 15 7C15 5.14348 14.2098 3.36301 12.8033 2.05025C11.3968 0.737498 9.48912 0 7.5 0Z" fill="white"/>
+                            </svg>
+                            
+                        <p>Address: 123 Flavor Street, Foodville, F1234 </p>
+                    </div>
+                      <!-- Phone -->
+                      <div class="contactDetailsCard">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="white"/>
+                         </svg>
+                        <p>Phone: +1 (555) 123-4567 </p>
+                    </div>
+                      <!-- Email -->
+                      <div class="contactDetailsCard">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/>
+                        </svg> 
+                        <p>Email: info@foodrestaurant.com </p>
+                    </div>
+            </section>
+
+            <section class="followUs">
+                <h2>Follow Us</h2>
+                <!-- Facebook -->
+                <div class="contactDetailsCard">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z" fill="#EEEEEE"/>
+                    </svg>
+                    <p>Facebook</p>
+                </div>
+                  <!-- Instagram -->
+                  <div class="contactDetailsCard">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="white"/>
+                    </svg>
+                        
+                    <p>Instagram</p>
+                </div>
+                    <!-- Twitter -->
+                    <div class="contactDetailsCard">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.27999 9.09 5.10999 7.38 2.99999 4.79C2.62999 5.42 2.41999 6.16 2.41999 6.94C2.41999 8.43 3.16999 9.75 4.32999 10.5C3.61999 10.5 2.95999 10.3 2.37999 10V10.03C2.37999 12.11 3.85999 13.85 5.81999 14.24C5.19083 14.4129 4.53003 14.4369 3.88999 14.31C4.1616 15.1625 4.69353 15.9084 5.41101 16.4429C6.12849 16.9775 6.99544 17.2737 7.88999 17.29C6.37366 18.4905 4.494 19.1394 2.55999 19.13C2.21999 19.13 1.87999 19.11 1.53999 19.07C3.43999 20.29 5.69999 21 8.11999 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" fill="white"/>
+                        </svg>
+                        <p>Twitter</p>
+                    </div>
+                     <!-- Tiktok -->
+                     <div class="contactDetailsCard">
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6 2.82C11.9166 2.03953 11.5399 1.0374 11.54 0H8.45V12.4C8.42667 13.0712 8.14352 13.7071 7.66031 14.1735C7.1771 14.6399 6.5316 14.9004 5.86 14.9C4.44 14.9 3.26 13.74 3.26 12.3C3.26 10.58 4.92 9.29 6.63 9.82V6.66C3.18 6.2 0.160004 8.88 0.160004 12.3C0.160004 15.63 2.92 18 5.85 18C8.99 18 11.54 15.45 11.54 12.3V6.01C12.793 6.90985 14.2974 7.39265 15.84 7.39V4.3C15.84 4.3 13.96 4.39 12.6 2.82Z" fill="white"/>
+                        </svg>   
+                        <p>Tiktok</p>
+                    </div>
+            </section>
+
+            <section class="quickLinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#foodMenu">Menu</a></li>
+                        <li><a href="#chefs">Chefs</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+            </section>
+
+            <section class=opneingHours">
+                <h2>Opening Hours</h2>
+                <!-- Monday to Friday -->
+                <div class="contactDetailsCard">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16.2 16.2L11 13V7H12.5V12.2L17 14.9L16.2 16.2Z" fill="white"/>
+                    </svg>
+                        
+                        
+                    <p>Monday to Friday: 10:00AM - 11:00PM</p>
+                </div>
+                <!-- Saturday -->
+                <div class="contactDetailsCard">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16.2 16.2L11 13V7H12.5V12.2L17 14.9L16.2 16.2Z" fill="white"/>
+                    </svg>
+                    <p>Saturday: 11:00AM - 11:00PM</p>
+                </div>
+                <!-- Sunday -->
+                <div class="contactDetailsCard">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM16.2 16.2L11 13V7H12.5V12.2L17 14.9L16.2 16.2Z" fill="white"/>
+                    </svg>
+                    <p>Sunday: Closed</p>
+                </div>
+            </section>
+
+        </footer>
+    
+        
+    </body>
+</html>
