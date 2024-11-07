@@ -45,16 +45,21 @@ nav .mobileMenu {
     top:0;
     padding: 20px 0px;
     transition: 0.7s ease-in-out;
-    position: fixed;
+    position: fixed;  
 }
 
-nav .mobileMenu ul {
+nav .mobileMenu ul{
     display: flex;
     flex-direction: column;
     gap: 30px;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+  
+}
+
+nav .mobileMenu ul li a label{
+   color: white; 
 }
 
 nav li {
@@ -64,6 +69,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: white;
+
 }
 
 nav li label {
@@ -143,11 +149,12 @@ main .hero button:hover {
 
  #mobileMenu-active:checked ~ #overlay {
     height: 100%;
-    width: 100%;
     position: fixed;
     top: 0;
-    z-index: 9;
+    left: 0;
+    width: 100%;
  }
+
 
  main h1 {
     color: #FAC031;
